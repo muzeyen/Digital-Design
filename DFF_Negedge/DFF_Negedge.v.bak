@@ -1,0 +1,13 @@
+module DFF_Negedge(D,clk,Q, Qn);
+input D; 
+input clk;  
+output Qn; 
+output  Q;
+reg Q,Qn;
+always @(negedge clk) 
+begin
+ if(clk)
+  Q <= D;  
+  Qn <= ~D; 
+end 
+endmodule 

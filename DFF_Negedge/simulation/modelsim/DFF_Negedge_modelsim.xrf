@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Muzeyen/Desktop/DFF_Negedge/DFF_Negedge.v
+source_file = 1, C:/Users/Muzeyen/Desktop/DFF_Negedge/DFF_Negedge_Tb.v
+source_file = 1, C:/Users/Muzeyen/Desktop/DFF_Negedge/db/DFF_Negedge.cbx.xml
+design_name = DFF_Negedge
+instance = comp, \Clk~I , Clk, DFF_Negedge, 1
+instance = comp, \Clk~clkctrl , Clk~clkctrl, DFF_Negedge, 1
+instance = comp, \D~I , D, DFF_Negedge, 1
+instance = comp, \Q~reg0feeder , Q~reg0feeder, DFF_Negedge, 1
+instance = comp, \Q~reg0 , Q~reg0, DFF_Negedge, 1
+instance = comp, \Qbar~0 , Qbar~0, DFF_Negedge, 1
+instance = comp, \Qbar~reg0 , Qbar~reg0, DFF_Negedge, 1
+instance = comp, \Q~I , Q, DFF_Negedge, 1
+instance = comp, \Qbar~I , Qbar, DFF_Negedge, 1
