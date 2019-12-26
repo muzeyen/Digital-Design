@@ -1,0 +1,17 @@
+|D_ffusingJK_ff
+d => j.IN1
+clk => clk.IN1
+rst => rst.IN1
+q <= JK_ff:DFF0.port4
+qbar <= JK_ff:DFF0.port5
+
+
+|D_ffusingJK_ff|JK_ff:DFF0
+J => Mux0.IN2
+K => Mux0.IN3
+clk => Q~reg0.CLK
+rst => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qnot <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

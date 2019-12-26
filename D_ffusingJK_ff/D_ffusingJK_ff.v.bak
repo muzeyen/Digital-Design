@@ -1,0 +1,18 @@
+module d2jkflip(j,k,clk,q,qbar);
+    wire D;
+    assign D=(j&~q)|(~k&q);
+    dff DFF0(q,qbar,D,clk);	 
+ endmodule
+
+ module dff(Q,Qbar,D,Clk);
+    output Q; 
+    output   Qbar; 
+    input   D,Clk;  
+	 reg Q,Qbar;
+    always @(posedge Clk) 
+    begin 
+      Q <= D;
+		Qbar <= ~D;
+    end 
+    endmodule
+	 
