@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Muzeyen/Desktop/multiplexer_4x1/multiplexer_4x1.v
+source_file = 1, C:/Users/Muzeyen/Desktop/multiplexer_4x1/multiplexer_4x1_tb.v
+source_file = 1, C:/Users/Muzeyen/Desktop/multiplexer_4x1/fuction11.v
+source_file = 1, C:/Users/Muzeyen/Desktop/multiplexer_4x1/db/multiplexer_4x1.cbx.xml
+design_name = fuction11
+instance = comp, \C~I , C, fuction11, 1
+instance = comp, \B~I , B, fuction11, 1
+instance = comp, \m1|Mux0~0 , m1|Mux0~0, fuction11, 1
+instance = comp, \F~I , F, fuction11, 1
+instance = comp, \A~I , A, fuction11, 1

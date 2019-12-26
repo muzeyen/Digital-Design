@@ -1,0 +1,49 @@
+module multiplexer_4x1_tb;
+wire out;
+reg [1:0]sel;
+reg [3:0]in;
+ 
+function m1( .out(out), .in(in), .sel(sel) );
+ 
+initial begin
+
+      // Initialize Inputs
+
+      sel = 0;
+
+      in0 = 0;
+
+      in1 = 0;
+
+      in2 = 0;
+
+      in3 = 0;
+
+      // Wait 100 ns for global reset to finish
+
+      #100;
+
+      // Add stimulus here
+
+      sel = 3'd0;
+
+      in1 = 4'd0;
+
+      in2 = 4'd1;
+
+      in3 = 4'd2;
+
+      in4 = 4'd3;
+
+
+      //Selection input generation
+
+      for (count = 0; count < 4; count = count + 1'b1)
+
+      begin
+       sel = count;
+       #20;
+      end
+	 end      
+    endmodule
+	 
